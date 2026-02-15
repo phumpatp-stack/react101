@@ -1,19 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+
+import Header from './section/Header'
+import Navbar from './section/Navbar'
+import Contact from './section/Contact'
+import LeftSection from './section/LeftSection'
+import RightSection from './section/RightSection'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    
-     <div class name='mx-auto max-w-6xl grid grid-cols-[40%_60%]'>
-      <div class name='sticky top-0 grid grid-rows-[35%_45%_20%'>
-        <div>Title</div>
-        <div>Nav</div>
-        <div class name='flex item-end'>Link</div>
-      </div>
+    <div className='mt-14 mx-auto max-w-6xl grid gap-y-5 lg:grid-cols-[40%_60%]'>
+      <LeftSection />
+      <RightSection />
     </div>
   )
 }
